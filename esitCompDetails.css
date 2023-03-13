@@ -1,0 +1,48 @@
+.deatilsCard{
+width: 250px;
+height: 260px;
+border: 1px solid black;
+margin-left: 500px;
+margin-top: 100px;
+border-radius: 10px;
+padding: 9px;
+font-size: 15px;
+}
+
+.deatilsCardPart{
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 5px;
+}
+.deatilsCardPart p {
+    padding-left: 8px;
+}
+.deatilsCardPart input {
+  border: 0;
+  width: 90px;
+  height: 24px;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+
+.deatilsCardButton{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    border: 0;
+    background-color: var(--threecolor);
+    color: var(--firstColor);
+    padding: 3px;
+    width: 60px;
+    border-radius: 5px;
+}
+.deatilsCardhead{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    
+}

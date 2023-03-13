@@ -1,0 +1,315 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+}
+/* @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); 
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+} */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+:root {
+  --firstColor: #ffffff;
+  --sacendcolor: #f9fafb;
+  --threecolor: #7e3af2;
+  --fontcolor: #24262d;
+  }
+
+body{
+  margin: 0;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 20% calc(80%/3) calc(80%/3) calc(80%/3);
+  grid-template-rows: 10% 45% 45%;
+  grid-template-areas: "aside nav nav nav" "aside das1 das2 das3" "aside table table table";
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;   */
+
+}
+
+.navBar{
+    box-shadow: 0 4px 0px 0 rgb(0 0 0 / 7%), 0 6px 0px 0 rgb(0 0 0 / 3%);
+    grid-area: nav;
+    background: var(--firstColor)!important;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.my-logo{
+
+  margin-top: 0;
+}
+
+.my-icon{
+  display: flex; 
+  align-items: center;
+  width: 100px;
+  justify-content: space-evenly;
+  
+}
+body{
+  background-color: var(--sacendcolor);
+}
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.SearchContestant{
+  height: 35px;
+  width: 570px;
+  background: var(--sacendcolor);
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.SearchContestant input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 15px 20px;
+  font-size: 15px;
+  color: var(--fontcolor);
+  height: 100%;
+ 
+}
+ ::placeholder {
+   color: var(--fontcolor);
+ }
+ .SearchContestant button  {
+   border: 0;
+   border-radius: 50%;
+   background: var(--sacendcolor);
+   cursor: pointer;
+   height: 23px;
+   width: 21px;
+   
+ }
+.imgUser{
+  height: 20px;
+  width: 20px;
+  color: var(--fontcolor);
+}
+.moon{
+  height: 20px;
+  width: 20px;
+  color: var(--fontcolor);
+}
+
+
+/* aside */
+
+
+aside{
+    font-family: serif !important;
+    grid-area: aside;
+    border-right: 0 ;
+    box-shadow: 0 0 0px 4px rgb(0 0 0 / 7%), 0 0 0px 6 rgb(0 0 0 / 3%);
+    color: var(--fontcolor);
+    background: var(--firstColor)!important;
+}
+.pages{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pages span{
+  margin-bottom: 12px;
+  margin-left: 20px;
+}
+.pages img {
+  margin-left: 26px;
+}
+.pageDashboard{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.pageUserManagment{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pageCompetition{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pageDashboard span .material-icons {
+  font-size: 16px;
+}
+.pageUserManagment span .material-icons {
+  font-size: 12px;
+}
+.pagepageCompetition span .material-icons {
+  font-size: 12px;
+  color: var(--sacendcolor);
+}
+
+
+  /* main */
+
+
+
+  /* statistics */
+
+
+  /* TotalContestants */
+ .statisticsTotalContestants{
+   grid-area: das1;
+   color: var(--fontcolor);
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .statisticsTotal{
+  background-color: var(--firstColor);
+  width: 70%;
+  height: 35%;
+  border-radius: 5PX;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: serif !important;
+ }
+ .statisticsTotalContestantsText{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* margin: 10px; */
+ }
+ .statisticsTotalContestantsText p {
+   padding: 0;
+   margin: 0;
+ }
+ .statisticsTotalContestantsIcon{
+  margin-right: 17px;
+  margin-left: -1px;
+  background-color: #feecdc;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+ }
+ /* statisticsNumberContestants */
+ .statisticsNumberContestants{
+  grid-area: das2;
+  justify-content: space-evenly;
+  color: var(--fontcolor);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.statisticsNumberContestantsText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.statisticsNumberContestantsText p {
+  padding: 0;
+  margin: 0;
+}
+.statisticsNumberContestantsIcon{
+  margin-right: 17px;
+  margin-left: -1px;
+}
+/* statisticsNumberContests */
+.statisticsNumberContests{
+  grid-area: das3;
+  justify-content: space-evenly;
+  color: var(--fontcolor);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.statisticsNumberContestsText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.statisticsNumberContestsText p {
+  padding: 0;
+  margin: 0;
+}
+.statisticsNumberContestsIcon{
+  margin-right: 17px;
+  margin-left: -1px;
+}
+
+
+/* table */
+
+
+
+.table{
+  grid-area: table;
+  padding: 10px;
+}
+table{
+  margin: 5px;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 7px 7px 0 0;
+  overflow: clip;
+  border: 0.25px solid darkgray;
+}
+thead{
+  background-color: var(--threecolor);
+  height: 33px;
+  color: var(--firstColor);
+}
+tbody{
+  height: 93px;
+  color: var(--fontcolor);
+}
+thead ,tbody{
+  vertical-align: middle;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+  /* color: var(--fontcolor); */
+}
