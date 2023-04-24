@@ -16,8 +16,10 @@
     <!-- css style -->
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="asset/css/userDetails.css">
+    <link rel="stylesheet" href="asset/css/comptionDetail.css">
+    <link rel="stylesheet" href="asset/css/ganer.css">
    
-    <title>Quran competition</title>
+    <title>Comption Detail</title>
 </head>
 <body>
         <!-- aside -->
@@ -76,22 +78,6 @@
      <!-- main -->
 
 
-     <!-- userDetails -->
-
-
-     
-      <div class="userDetails">
-
-        <p id="UserName" class="UserName">User Name :</p>
-        <label for="UserName" class="UserNameLable">Aya Abu Alnasser</label>
-        <p id="Almasijed" class="AlmasijedName">Almasijed :</p>
-        <label for="Almasijed" class="AlmasijedNameLable">Omar</label>
-        <p id="Password" class="Password" >Password :</p>
-        <label for="Password" class="PasswordLable" >1235678</label>
-        <p id="supervisor" class="supervisor" >supervisor :</p>
-        <label for="supervisor" class="supervisorLabele" >Manal</label>
-        <img class="editIcon" height="30" width="30" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-edit-interface-kiranshastry-solid-kiranshastry.png"/> 
-      </div>
 
       
         <!-- probe -->
@@ -103,65 +89,63 @@
       <label for="Markd" class="MarkdLable">95</label>
       <p id="Date" class="Date" >Date :</p>
       <label for="Date" class="DateLable" >2/8/2022</label>
+      <p id="Date" class="Date" >success :</p>
+      <label for="Date" class="DateLable " >80</label>
       <img class="editIcon" height="30" width="30" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-edit-interface-kiranshastry-solid-kiranshastry.png"/>
      </div>
 
      <!-- competitionDetails -->
 
-     <div class="competitionDetails" >
-      <div class="table" >
-        <table class="tableCompetition" >
-          <thead>
-            <tr>
-              <th>Name Competition</th>
-              <th>Part</th>
-              <th>Mark</th>
-              <th >Date</th>
-            </tr>
-          </thead>
-        <tbody>
+     <div class="table hoverEventNorml" >
+      <table class="tableCompetition" >
+        <thead>
           <tr>
-            <td>Ramadan</td>
-            <td>8/7/6</td>
-            <td>70</td>
-            <td>20/8/2012</td>
+            <th>User name</th>
+            <th>Almasijed</th>
+            <th>supervisor</th>
+            <th class="rowWidth" ></th>
           </tr>
-          <tr>
-            <td>Almaouled</td>
-            <td>1/2/3</td>
-            <td>90</td>
-            <td>9/5/2022</td>
+        </thead>
+      <tbody>
+      
+          <tr class="hoverEvent" onclick="redirect();" >
+            <td>Aya AbuAlnasser</td>
+            <td>omar</td>
+            <td>nour</td>
+
           </tr>
-          <tr>
-            <td>Febrier</td>
-            <td>1/2/3/4/5</td>
-            <td>95</td>
-            <td>12/2/2022</td>
+        
+          <tr class="hoverEvent" onclick="redirect();" >
+            <td>Aya AbuAlnasser</td>
+            <td>omar</td>
+            <td>nour</td>
+     
+    
           </tr>
-          <tr>
-            <td>March</td>
-            <td>First10</td>
-            <td>83</td>
-            <td>3/9/2017</td>
+          <tr class="hoverEvent" onclick="redirect();" >
+            <td>Aya AbuAlnasser</td>
+            <td>omar</td>
+            <td>nour</td>
+    
+    
           </tr>
-          <tr>
-            <td>Ramadan</td>
-            <td>Finel5</td>
-            <td>98</td>
-            <td>21/9/2019</td>
+          <tr class="hoverEvent" onclick="redirect();" >
+            <td>Aya AbuAlnasser</td>
+            <td>omar</td>
+            <td>nour</td>
+     
+    
           </tr>
-          <tr>
-            <th colspan="3" > SHOWING 21-30 OF 100</th>
-            <th class="hoverEvent arrowsIcon" >
-              <img height="25" width="25" src="https://img.icons8.com/sf-black/64/null/back.png"/>
-              <img height="25" width="25" src="https://img.icons8.com/sf-black/64/null/forward.png"/>
-            </th>
-        </tr>
-        </tbody>
-        </table>
-      </div>
-       
-     </div>
+          <th colspan="3" > SHOWING 21-30 OF 100</th>
+          <th class="hoverEvent arrowsIcon" >
+            <img height="25" width="25" src="https://img.icons8.com/sf-black/64/null/back.png"/>
+            <img height="25" width="25" src="https://img.icons8.com/sf-black/64/null/forward.png"/>
+          </th>
+      </tr>
+      </tbody>
+      </table>
+    </div>
+     
 
 </body>
 </html>

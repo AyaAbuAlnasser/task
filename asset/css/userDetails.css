@@ -31,32 +31,18 @@
     color: var(--fontcolor);
     position: relative;
 }
- /* .UserName{
-    grid-area: col1;  
-}
-.UserNameLable{
-   grid-area: col2;
-}
-.AlmasijedName{
-  grid-area: col9;
-}
-.AlmasijedNameLable{
-  grid-area: col10;
-}
-.Password{
-    grid-area: col3;
-}
-.PasswordLable{
-  grid-area: col4;
-}
-.supervisor{
-    grid-area: col11;
-} 
-.supervisorNameLable{
-  grid-area: col12;
-} */
+ 
+.comptionDetail{
+
+  grid-template-columns:  25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "col1 col2 col3 col4 "
+                         "col5 col6 col7 col8";
 
 
+
+
+}
 
 /* probe */
 

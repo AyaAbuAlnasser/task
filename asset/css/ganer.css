@@ -1,0 +1,119 @@
+:root {
+    --firstColor: #ffffff;
+    --sacendcolor: #f9fafb;
+    --threecolor: #7e3af2;
+    --fontcolor: #24262d;
+    }
+.addUserCard {
+
+    position: absolute;
+    background-color: var(--firstColor);
+    display:block;
+    width: 600px;
+    height: 450px;
+    left: 35%;
+    top: 12%;
+    border-radius: 21px;
+    z-index: 2;
+}  
+
+.addComptionCard{
+
+    position: absolute;
+    background-color: var(--firstColor);
+    display:block;
+    width: 400px;
+    height: 300px;
+    left: 42%;
+    top: 20%;
+    border-radius: 21px;
+    z-index: 2;
+
+
+}
+.flexDetails{
+
+    display: flex;
+    flex-direction: column;
+ }
+
+form .flexDetails input{
+
+    width: 250px;
+    
+}
+.flexDetailsInput{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flexDetailsInputComption{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.flexDetailsComption {
+
+    margin: 10px 0;
+
+}
+.contenar{
+
+    padding: 20px;
+    
+ }
+ .AouqphDetailsTitle,.userDetailsTitle ,.ComptionDetailsTitle{
+
+    border-bottom: 1px solid #808080ab;
+    margin-bottom: 15px;
+
+ }
+.AouqphDetailsTitle {
+
+    margin-top: 20px;
+   
+}
+.userDetailsTitle ,.ComptionDetailsTitle{
+
+    margin-top: 5px;
+
+}
+
+.overlay{
+
+    /* background-color: #7e3af2; */
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+    
+
+}
+
+.saveIcon{
+
+    position: absolute;
+    left: 90%;
+    top: 90%;
+  }
+
+  .saveIconComption{
+
+    position: absolute;
+    left: 84%;
+    top: 83%;
+
+  }
+  .arrowsIcon, .tableIcon{
+
+    display: flex;
+
+  }
